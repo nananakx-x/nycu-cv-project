@@ -6,7 +6,7 @@
 
 ## Set-up
 
-YOLO models can be downloaded with PyTorch or using this [guide] (https://www.kaggle.com/code/nisafatima/object-detection-using-yolo).
+YOLO models can be downloaded with PyTorch or using this [guide](https://www.kaggle.com/code/nisafatima/object-detection-using-yolo).
 
 ---
 
@@ -18,7 +18,7 @@ Through this project, we aim to explore various methodologies, compare their eff
 
 The first part of our presentation focuses on our own implementation, where we will guide you through the procedures, experimental results, and discussion as we progress from simple tracking methods to advanced models like YOLO and DeepSORT. 
 
-In the second part, we will analyze findings from research papers, highlight their strengths and limitations, and identify ideal solutions. The reports used are [A New Multimodal Map Building Method Using Multiple Object Tracking and Gaussian Process Regression] (https://www.mdpi.com/2072-4292/16/14/2622) and [A novel real-time multiple objects detection and tracking framework for different challenges] (https://www.sciencedirect.com/science/article/pii/S111001682200165X).
+In the second part, we will analyze findings from research papers, highlight their strengths and limitations, and identify ideal solutions. The reports used are [A New Multimodal Map Building Method Using Multiple Object Tracking and Gaussian Process Regression](https://www.mdpi.com/2072-4292/16/14/2622) and [A novel real-time multiple objects detection and tracking framework for different challenges](https://www.sciencedirect.com/science/article/pii/S111001682200165X).
 
 By the end, we aim to provide a comprehensive understanding of this field and inspire further exploration.
 
@@ -33,7 +33,7 @@ Along the way, we encountered and addressed various challenges, which we will la
 1. **Simple single-object tracking with manual labelling**  
    *(test1.py)*
 
-The first implementation we attempted was a simple single-object tracker with manual labeling. Before diving into the hands-on aspects of our project, we conducted extensive research and came across a straightforward yet practical beginner’s guide on Medium (https://medium.com/@khwabkalra1/object-tracking-2fe4127e58bf). This guide formed the foundation of our initial implementation. The code starts by initializing a KCF tracker using OpenCV’s cv2.TrackerKCF_create() function. The video file is loaded using cv2.VideoCapture(), and the user is prompted to manually select the object to track through cv2.selectROI(), where a bounding box is drawn around the object of interest. Once the object is selected, the tracker is initialized with the frame and bounding box using tracker.init(). In the tracking loop, the tracker is updated frame-by-frame using tracker.update(), and the bounding box is drawn on the object if tracking is successful. 
+The first implementation we attempted was a simple single-object tracker with manual labeling. Before diving into the hands-on aspects of our project, we conducted extensive research and came across a straightforward yet practical [beginner’s guide on Medium](https://medium.com/@khwabkalra1/object-tracking-2fe4127e58bf). This guide formed the foundation of our initial implementation. The code starts by initializing a KCF tracker using OpenCV’s cv2.TrackerKCF_create() function. The video file is loaded using cv2.VideoCapture(), and the user is prompted to manually select the object to track through cv2.selectROI(), where a bounding box is drawn around the object of interest. Once the object is selected, the tracker is initialized with the frame and bounding box using tracker.init(). In the tracking loop, the tracker is updated frame-by-frame using tracker.update(), and the bounding box is drawn on the object if tracking is successful. 
 
 While it worked reasonably well, we observed several limitations during experimentation. (Click) For instance, if the labeled person was obstructed or blocked during the video, tracking would fail entirely. Additionally, the bounding box often lost precision, gradually drifting away from the person as the video progressed. Other than accuracy and precision, the main challenge with this initial approach is its lack of user-friendliness, as manual labeling is required. This process can be time-consuming and prone to human error, especially in videos with fast-moving or multiple objects. Furthermore, in practical scenarios, such as those involving real-world applications like surveillance or autonomous vehicles, there are often multiple objects to track simultaneously. 
 
