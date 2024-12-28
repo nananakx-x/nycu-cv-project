@@ -18,7 +18,7 @@ Through this project, we aim to explore various methodologies, compare their eff
 
 The first part of our presentation focuses on our own implementation, where we will guide you through the procedures, experimental results, and discussion as we progress from simple tracking methods to advanced models like YOLO and DeepSORT. 
 
-In the second part, we will analyze findings from research papers, highlight their strengths and limitations, and identify ideal solutions. The reports used are [A New Multimodal Map Building Method Using Multiple Object Tracking and Gaussian Process Regression](https://www.mdpi.com/2072-4292/16/14/2622) and [A novel real-time multiple objects detection and tracking framework for different challenges](https://www.sciencedirect.com/science/article/pii/S111001682200165X).
+In the second part, we will analyze findings from research papers, highlight their strengths and limitations, and identify ideal solutions. The research papers used are [A New Multimodal Map Building Method Using Multiple Object Tracking and Gaussian Process Regression](https://www.mdpi.com/2072-4292/16/14/2622) and [A novel real-time multiple objects detection and tracking framework for different challenges](https://www.sciencedirect.com/science/article/pii/S111001682200165X).
 
 By the end, we aim to provide a comprehensive understanding of this field and inspire further exploration.
 
